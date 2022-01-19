@@ -2,15 +2,11 @@
     <div class="time-box">
         <NCard title="时间线" :bordered="false" size="large" class="rounded-16px shadow-sm">
             <NTimeline size="large">
-                <NTimelineItem
-                    type="default"
-                    title="后续待开发"
-                    time="Tomorrow and tomorrow ..."
-                >
+                <NTimelineItem type="default" title="后续待开发" time="Tomorrow and tomorrow ...">
                     <n-icon>
                         <n-spin size="small" />
                     </n-icon>
-                    <div>学习笔记 -> 个人简历 -> 导航页 -> 游戏历程 -> 手机回复功能 -> 搜索功能</div>
+                    <div>学习笔记 -> 个人简历 -> 导航页 -> 游戏历程 -> 手机回复功能 -> 搜索功能 -> 手机适配</div>
                 </NTimelineItem>
                 <NTimelineItem
                     v-for="item in Timelist"
@@ -25,15 +21,16 @@
         <n-card title="项目信息" :bordered="false" size="small" class="rounded-16px shadow-sm">
             <n-descriptions label-placement="left" bordered size="small" :column="2">
                 <n-descriptions-item label="版本">
-                    <n-tag type="primary">{{ packageJson.version }}</n-tag>
+                    <n-tag type="info">{{ packageJson.version }}</n-tag>
                 </n-descriptions-item>
-                <n-descriptions-item label="Github地址">
-                    <div>暂无</div>
-                    <!-- <a
-                        class="text-primary"
-                        href="https://github.com/honghuangdc/soybean-admin"
-                        target="_blank"
-                    >Github地址</a>-->
+                <n-descriptions-item label="Github地址" content-style="vertical-align: none;">
+                    <n-tag type="info">
+                        <a
+                            class="text-primary"
+                            href="https://github.com/sbm123456/catblack"
+                            target="_blank"
+                        >https://github.com/sbm123456/catblack</a>
+                    </n-tag>
                 </n-descriptions-item>
             </n-descriptions>
         </n-card>
@@ -97,5 +94,12 @@ const Timelist: {
     margin: 20px;
     flex-direction: column;
     gap: 15px;
+}
+.n-descriptions
+    .n-descriptions-table-wrapper
+    .n-descriptions-table
+    .n-descriptions-table-row
+    .n-descriptions-table-content {
+    vertical-align: none;
 }
 </style>
