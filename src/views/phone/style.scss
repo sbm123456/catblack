@@ -1,0 +1,30 @@
+.phone {
+  z-index: 2;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: calc($phone-height * 0.9);
+  width: calc($phone-width * 0.9);
+  transition: transform 0.5s, border 0.5s;
+  transform-origin: 100% 0;
+  border: 4px solid #eee;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgba(8,7,16,0.6);
+  background-color: #fff;
+}
+.phone.big {
+  transform: scale(1);
+}
+.phone.small {
+  transform: scale(0.1);
+  box-shadow: 3px 3px 30px rgba(8,7,16,0.6);
+  border-radius: 20px;
+  // border: 20px solid #eee;
+
+  &:hover {
+    transform: scale(0.25);
+  }
+}

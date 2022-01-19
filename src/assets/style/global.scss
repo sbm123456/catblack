@@ -1,0 +1,45 @@
+.text-primary {
+  color: $primary-color;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.wh-full {
+  @extend .w-full;
+  @extend .h-full;
+}
+
+.w-100w {
+  width: 100vw;
+}
+.h-100h {
+  height: 100vh;
+}
+
+.wh-100wh {
+  @extend .w-100w;
+  @extend .h-100h;
+}
+
+.flex-col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.rounded-16px {
+  border-radius: 16px;
+}
+
+.shadow-sm {
+  box-shadow: var(0 0 #0000,0 0 #0000),var(0 0 #0000,0 0 #0000),var(0 0 #0000);
+}

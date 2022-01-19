@@ -1,0 +1,21 @@
+.phone-small {
+    height: 100%;
+    width: 100%;
+    background: url("@/assets/image/手机壁纸.jpg");
+    background-size:100% 100%;
+    cursor: pointer;
+    filter: brightness(50%);
+    color: #fff;
+    &:hover {
+        filter: brightness(100%);
+        // background: none;
+    }
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    footer {
+        height: 20%;
+        text-align: center;
+    }
+}
