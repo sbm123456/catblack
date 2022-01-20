@@ -90,8 +90,8 @@ const Timelist: {
 
 <style scoped lang="scss">
 .time-box {
+    padding: 20px;
     display: flex;
-    margin: 20px;
     flex-direction: column;
     gap: 15px;
 }

@@ -47,6 +47,10 @@ const routes: RouteRecordRaw[] = [
           title: "导航页"
         },
       },
+      {
+        path: "/",
+        redirect: "/time"
+      },
     ]
   },
   {
